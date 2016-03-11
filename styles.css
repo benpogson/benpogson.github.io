@@ -1,0 +1,184 @@
+/*
+
+Title: Stylesheet Template
+
+Author: Maurice van Cooten
+
+*/
+
+body {
+	background: powderblue;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin:0;
+	color:honeydew;
+}
+
+a {
+	color:darkturquoise;
+	text-decoration:none;
+}
+
+a:hover {
+	color:black;
+}
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+	margin: 0 auto;
+	width:88%;
+	max-width: 960px;
+}
+
+.wrapper {
+	padding:1em 0;
+	background: salmon;	
+}
+
+/* Navigation
+------------------------------------------*/
+nav ul {
+	padding:0;
+	list-style:none;
+	display:flex;
+
+}
+
+nav ul li {
+	margin-right:.5em;
+
+}
+
+nav ul li a{
+	background:salmon;
+	padding: .5em 1em;
+	border-radius: 10px;
+	transition: all 1s ease-in-out;
+	
+}
+
+nav ul li a:hover {
+	background:pink;
+}
+
+/* Transform
+------------------------------------------*/
+.rotate {
+	 transition: all 10s ease-in-out;
+}
+
+
+.rotate:hover {
+	 transform: rotate(-18deg);
+} 
+
+.scale:hover {
+	 transform: scale(3
+	 );
+	 transition: all 5s ease-in-out;
+}
+
+.skew {
+	 transition: all 1s ease-in-out;
+}
+
+
+
+/* Bespoke bullets
+------------------------------------------*/
+
+.no-bullets {
+	 padding:0;
+	 list-style:hiragana;
+}
+
+.bullet {
+	 height:16px;
+	 width:16px;
+	 display:inline-block;
+	 background: url(images/bullet.png);
+	 margin: 0;
+}
+
+/* Filters
+------------------------------------------*/
+.grayscale:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	transition: all 1s ease-in-out;
+}
+
+.grayscale {
+	 -webkit-filter: grayscale(100%);
+	 filter: grayscale(100%);
+
+}
+
+.blur {
+	 -webkit-filter: blur(3px)
+	 filter: blur(3	px);
+	 transition: all 1s ease-in-out;
+}
+
+.blur:hover {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+.sepia {
+	-webkit-filter: sepia (0);
+	filter:sepia(0);
+}
+
+.hue-rotate:hover {
+	filter:hue-rotate(270deg);
+	transition: all 1s ease-in-out;
+}
+
+.hue-rotate{
+	filter:hue-rotate(270deg);
+	transition: all 1s ease-in-out;
+}
+
+
+.invert:hover{
+	-webkit-filter: invert(100%);
+	filter:invert(100%);
+	transition: all 1s ease-in-out;
+}
+
+
+
+
+/* Media queries
+------------------------------------------*/
+
+@media (min-width: 600px) {
+	
+	.container {
+		display:flex;
+		justify-content:space-between;
+	}
+
+	main {
+		width:60%;
+	}
+
+	.secondary {
+		width:36%;
+		border-radius:5px;
+		padding:.5em;
+		border:1px dotted black;
+	}
+
+
+
+
+
+
+}
+
